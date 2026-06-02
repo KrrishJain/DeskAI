@@ -21,8 +21,4 @@ jobs:
 
             git pull origin main
 
-            docker compose down
-
-            docker system prune -af
-
             docker compose up -d --build

@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import {
   Bars3Icon,
   BellIcon,
-  MagnifyingGlassIcon,
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon,
 } from '@heroicons/react/24/outline';
@@ -27,8 +26,8 @@ export default function Header({ mini, onToggleMini, onMobileMenu }) {
         'fixed top-0 right-0 z-20 h-16 flex items-center justify-between px-4 lg:px-6',
         'bg-white/90 backdrop-blur border-b border-surface-200',
         'transition-[left] duration-[220ms]',
-        mini ? 'left-[72px]' : 'left-[260px]',
-        'left-0 lg:left-auto',
+        // Mobile: always full-width (left-0). Desktop: offset by sidebar width.
+        'left-0',
         mini ? 'lg:left-[72px]' : 'lg:left-[260px]'
       )}
     >
@@ -45,13 +44,6 @@ export default function Header({ mini, onToggleMini, onMobileMenu }) {
             : <ChevronDoubleLeftIcon className="w-4 h-4 text-surface-500" />
           }
         </button>
-
-        {/* Search */}
-        <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl
-                        bg-surface-100 text-surface-400 text-sm w-56 cursor-text">
-          <MagnifyingGlassIcon className="w-4 h-4 shrink-0" />
-          <span>Search...</span>
-        </div>
       </div>
 
       <div className="flex items-center gap-2">
@@ -63,7 +55,8 @@ export default function Header({ mini, onToggleMini, onMobileMenu }) {
               <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-red-500 ring-2 ring-white" />
             )}
           </Menu.Button>
-          <Transition as={Fragment}
+          <Transition
+            as={Fragment}
             enter="transition ease-out duration-100"
             enterFrom="transform opacity-0 scale-95"
             enterTo="transform opacity-100 scale-100"
@@ -110,7 +103,8 @@ export default function Header({ mini, onToggleMini, onMobileMenu }) {
               <p className="text-xs text-surface-400 mt-0.5 capitalize">{user?.role}</p>
             </div>
           </Menu.Button>
-          <Transition as={Fragment}
+          <Transition
+            as={Fragment}
             enter="transition ease-out duration-100"
             enterFrom="opacity-0 scale-95"
             enterTo="opacity-100 scale-100"
