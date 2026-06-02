@@ -1,0 +1,35 @@
+# Core Server
+fastapi==0.135.1
+uvicorn[standard]==0.41.0
+python-dotenv==1.2.1
+
+# Auth
+PyJWT==2.11.0
+
+# LangChain / LangGraph
+langgraph==1.0.10
+langchain==1.2.10
+langchain-core==1.2.17
+langchain-community==0.4.1
+langchain-groq==1.1.2
+langsmith==0.7.14
+
+# LLM
+groq==0.37.1
+requests==2.32.5
+
+# Database
+SQLAlchemy==2.0.48
+psycopg2-binary==2.9.11
+tinydb==4.8.2
+
+# Vector Search / Embeddings
+faiss-cpu==1.13.2
+sentence-transformers==5.2.3
+
+# PDF
+PyPDF2==3.0.1
+
+# Utilities
+numpy==2.4.2
+PyYAML==6.0.3

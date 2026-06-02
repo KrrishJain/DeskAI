@@ -1,0 +1,26 @@
+ALTER TABLE "assets" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "timesheet" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "clients" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "departments" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "designations" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "users" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "documents" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "employees" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "goal_types" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "goals" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "holidays" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "leaves" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "overtime" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "promotions" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "resignations" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "salary_structures" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "salaries" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "payroll_additions" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "payroll_deductions" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "salary_settings" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "training_types" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "trainers" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "trainings" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "projects" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "tasks" ADD COLUMN "company_id" integer NOT NULL;--> statement-breakpoint
+ALTER TABLE "notifications" ADD COLUMN "company_id" integer NOT NULL;

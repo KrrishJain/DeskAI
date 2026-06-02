@@ -1,0 +1,3 @@
+client_name: "ExampleCorp"
+assistant_name: "ExampleCorp Assistant"
+max_tokens: 256

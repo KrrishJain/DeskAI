@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1772780814330,
+      "tag": "0000_loving_grandmaster",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1772781277329,
+      "tag": "0001_crazy_george_stacy",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1772781934842,
+      "tag": "0002_tiresome_argent",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1772783574601,
+      "tag": "0003_flowery_ted_forrester",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1772784610298,
+      "tag": "0004_marvelous_fenris",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1772788039362,
+      "tag": "0005_mean_obadiah_stane",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1772794820938,
+      "tag": "0006_big_raza",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1772795163878,
+      "tag": "0007_tan_zaladane",
+      "breakpoints": true
+    }
+  ]
+}

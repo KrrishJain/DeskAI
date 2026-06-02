@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - officegpt
+
+  officegpt:
+    build: ./officegpt
+    ports:
+      - "7000:7000"
