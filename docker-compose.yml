@@ -17,3 +17,5 @@ services:
     build: ./officegpt
     ports:
       - "7000:7000"
+    volumes:
+      - ./officegpt/vectordb:/app/vectordb
